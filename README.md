@@ -1,6 +1,7 @@
 Android Beacon Library
 =======================
 
+
 [![Build Status](https://circleci.com/gh/AltBeacon/android-beacon-library.png?circle-token=4e11fb0dccaa8b98bc67fdbe38b179e4a7d07c27)](https://circleci.com/gh/AltBeacon/android-beacon-library)
 
 An Android library providing APIs to interact with beacons.  Please visit the
