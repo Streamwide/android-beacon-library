@@ -1,12 +1,35 @@
+<!--
+  ~
+  ~ 	StreamWIDE (Team on The Run)
+  ~
+  ~ @createdBy  AndroidTeam on Fri, 28 Jul 2023 14:53:12 +0100
+  ~ @copyright  Copyright (c) 2023 StreamWIDE UK Ltd (Team on the Run)
+  ~ @email      support@teamontherun.com
+  ~
+  ~ 	© Copyright 2023 StreamWIDE UK Ltd (Team on the Run). StreamWIDE is the copyright holder
+  ~ 	of all code contained in this file. Do not redistribute or
+  ~  	re-use without permission.
+  ~
+  ~ @lastModifiedOn Fri, 28 Jul 2023 14:49:30 +0100
+  -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Needed only for Android 12 . -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+
     <uses-permission android:name="android.permission.BLUETOOTH" android:required="false"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:required="false"/>
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
 
     <application>
-        <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver" android:exported="false">
+        <receiver
+            android:exported="false"
+            android:name="com.streamwide.smartms.altbeacon.beacon.startup.StartupBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
@@ -17,24 +40,27 @@
         <service android:enabled="true"
             android:exported="false"
             android:isolatedProcess="false"
-            android:foregroundServiceType="location"
             android:label="beacon"
-            android:name=".service.BeaconService"
+            android:name="com.streamwide.smartms.altbeacon.beacon.service.BeaconService"
+            android:foregroundServiceType="connectedDevice"
             />
 
-        <service android:name=".BeaconIntentProcessor"
+        <service
+            android:name="com.streamwide.smartms.altbeacon.beacon.BeaconIntentProcessor"
             android:enabled="true"
             android:exported="false"
             />
 
-        <service android:name=".service.ScanJob"
+        <service
+            android:name="com.streamwide.smartms.altbeacon.beacon.service.ScanJob"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE">
             <meta-data android:name="immediateScanJobId" android:value="208352939" />
             <meta-data android:name="periodicScanJobId" android:value="208352940" />
         </service>
-  
-        <service android:name="org.altbeacon.bluetooth.BluetoothTestJob"
+
+        <service
+            android:name="com.streamwide.smartms.altbeacon.bluetooth.BluetoothTestJob"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" >
             <meta-data android:name="jobId" android:value="1799803768"/>

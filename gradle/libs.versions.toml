@@ -1,0 +1,157 @@
+[versions]
+sdkCore = "4.2.6-r144190"
+sdkDatabase = "4.2.5-r144105"
+sdkSecurity = "4.2.2-r143858"
+sdkUploadservice = "4.2.2-r143858"
+sdkLogger = "4.2.2-r143858"
+sdkCrypto = "4.2.2-r143858"
+sdkVcard = "4.2.2-r143858"
+sdkBeacon = "4.2.2-r143858"
+sdkTemplate = "4.2.2-r143858"
+kms = "1.1.10"
+voip = "3.0.87"
+appCameraX = "4.2.5-r143993"
+appOsmdroid = "4.2.2-r143858"
+appTimepicker = "4.2.5-r143993"
+appHardware = "4.2.5-r144099"
+appTelosystem = "4.2.0-r142909"
+appGooglemap = "4.2.2-r143858"
+appAlfresco = "4.2.5-r143993"
+appStd = "4.2.2-r143858"
+appCommunicator = "4.2.0-r142909"
+appMdm = "4.2.4-r143928"
+appUsbSerial = "4.2.2-r143860"
+appJitsi = "4.2.2-r143858"
+appAccessibility = "4.2.5-r143993"
+appScheduling = "4.2.5-r143993"
+appMyRules = "4.2.5-r143993"
+myrulesTemplate = "4.2.2-r143858"
+schedulingcore = "4.2.5-r143993"
+datepicker = "4.2.5-r143993"
+sqlite = "2.4.0"
+room = "2.6.1"
+coil = "2.7.0"
+coilTransformations = "2.0.3"
+exoplayer = "2.19.1"
+kotlin-version = "1.8.20"
+lifecycle-version = "2.5.1"
+navigation = "2.5.1"
+fastscroll = "2.1.0"
+security-crypto = "1.1.0-alpha06"
+androidxAppCompat = { strictly = "1.7.0" }
+androidxLegacy = "1.0.0"
+androidxExifinterface = "1.3.7"
+androidxStartup = "1.1.1"
+androidxWork = "2.9.0"
+androidxCoreKtx = "1.13.1"
+androidxCore = "1.13.1"
+# when updating androidxPaging please retest those two tickets SMARTMS-55946 && SMARTMS-57087
+androidxPaging = "3.1.1"
+androidxLifecycle = "2.8.4"
+androidxFragment = { strictly = "1.8.2" }
+androidxAnnotation = "1.8.1"
+androidxMultidex = "2.0.1"
+androidxRecyclerview = "1.3.2"
+androidxCardview = "1.0.0"
+androidxConstraintlayout = "2.1.4"
+androidxNavigationFragment = "2.7.7"
+androidxNavigationUi = "2.7.7"
+androidxNavigationktx = "2.7.7"
+androidxActivityktx = "1.9.1"
+androidxSplashscreen = "1.0.1"
+androidxCoordinatorlayout = "1.2.0"
+datastorePreferences = "1.1.1"
+googleMaterial = "1.12.0"
+androidxSqlite = "2.2.0"
+sqlcipher = "4.6.1"
+googleGson = "2.11.0"
+plGif = "1.2.29"
+zxingCore = "3.5.0"
+zxingJourneyapps = "4.3.0"
+clansFab = "1.6.4"
+baseflowPhotoview = "2.3.0"
+labsScaleview = "3.10.0"
+leolinShortcutbadger = "1.1.22"
+alfrescoSdk = "1.5.2"
+androidVolley = "1.2.1"
+okio = "3.9.0"
+kotlin = "2.0.0"
+dokka = "1.9.20"
+coroutinesCore = "1.8.1"
+openidAppauth = "0.11.1"
+jitsiMeetSdk = "10.2.1"
+jitsiMeetSdkSw = "5.1.0-sw-r7"
+facebookReact = "0.73.8"
+okhttp3 = "4.12.0"
+googlePlayLocation = "21.3.0"
+googlePlayMaps = "19.0.0"
+googleMapsUtils = "3.8.2"
+googlePlayPhone = "18.1.0"
+googlePlayBase = "18.5.0"
+googlePlayAuth = "21.2.0"
+googleFirebaseMessaging = "24.0.0"
+androidxSwiperefreshlayout = "1.1.0"
+androidxLifecycleExtensions = "2.2.0"
+androidxMedia = "1.7.0"
+powermock = "2.0.9"
+junit = "5.9.2"
+json = "20210307"
+androidxTestCore = "1.6.1"
+hamcrest = "2.2"
+robolectric = "4.14.1"
+kotlinxCoroutinesTest = "1.9.0"
+archCoreTesting = "2.2.0"
+androidxTestRunner = "1.6.2"
+androidxTestRules = "1.6.1"
+androidxTestExtJunit = "4.13.2"
+androidxTestEspressoCore = "3.6.1"
+mockitoCore = "5.13.0"
+mockitoKotlin = "5.4.0"
+mockk = "1.13.12"
+assertjCore = "3.26.3"
+turbine = "1.1.0"
+androidGradlePlugin = "8.5.1"
+jsonSimple = "1.1.1"
+#bom = "4.9.3"
+mockwebserver = "4.11.0"
+gmsPlugin = "4.4.2"
+junitJunit = "4.13.2"
+sonarQube = "3.4.0.2513"
+loggingInterceptor = "4.11.0"
+retrofit = "2.9.0"
+jdbc = "3.46.0.1"
+jacoco = "0.8.7"
+#for nfcWriter
+eventbus = "3.2.0"
+camerax = "1.3.4"
+
+[libraries]
+
+stw-template = { group = "com.streamwide", name = "swsdktemplate", version.ref = "sdkTemplate" }
+
+androidx-legacy-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "androidxLegacy" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "androidxAnnotation" }
+google-gson = { group = "com.google.code.gson", name = "gson", version.ref = "googleGson" }
+com-squareup-okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
+# Tests
+powermock-module-junit4-core = { group = "org.powermock", name = "powermock-module-junit4", version.ref = "powermock" }
+powermock-module-junit4-rule = { group = "org.powermock", name = "powermock-module-junit4-rule", version.ref = "powermock" }
+powermock-api-mockito = { group = "org.powermock", name = "powermock-api-mockito2", version.ref = "powermock" }
+junit-junit = { group = "junit", name = "junit", version.ref = "junitJunit" }
+junit-vintage-engine = { group = "org.junit.vintage", name = "junit-vintage-engine", version.ref = "junit" }
+junit-jupiter-api = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junit" }
+junit-jupiter-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junit" }
+androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidxTestCore" }
+robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
+
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-dokka = { group = "org.jetbrains.dokka", name = "dokka-gradle-plugin", version.ref = "dokka" }
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+jsonSimple = { group = "com.googlecode.json-simple", name = "json-simple", version.ref = "jsonSimple" }
+okHttpInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor" }
+mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "mockwebserver" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

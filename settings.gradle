@@ -1,3 +1,0 @@
-include ':lib'
-project(":").name = "android-beacon-library-root"
-project(":lib").name = "android-beacon-library"
